@@ -1,272 +1,430 @@
 <!DOCTYPE html>
-	<html>
-	<head>
-		<title>Jiquitaia Solidária</title>
-		<meta charset="utf-8">
- 	 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 	 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
- 	 	<link rel="stylesheet" href="css/style.css">
-	</head>
+<html lang="pt-br">
 
-	<body>
-		<!-- HEADER -->
-		<header id="site-header" class="fixed-top">
-		  <nav class="navbar navbar-expand-lg navbar-dark">
-		      
-		    <a class="navbar-brand" href="index.html">Jiquitaia Solidária</a>
-		    	
-	    	<div class="collapse navbar-collapse" id="navbarNav">
-	          	<ul class="navbar-nav m-auto">
-	              	<li class="nav-item active">
-	                  	<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-	              	</li>
+<head>
+  <title>Jiquitaia Solidária</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#11d251">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#11d251">
+  <meta name="msapplication-navbutton-color" content="#11d251">
+  <meta charset="utf-8">
+  <meta name="Description" content="DESCRIÇÃO PARA CIO DO GOOGLE(APARECER NAS PESQUISA DOGOOGLE)">
+  <title>Biologia Digital</title>
+  <link rel="shortcut icon" href="assets/favicon-64x.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/owl.css">
+  <link rel="stylesheet" type="text/css" href="css/bundler.css">
+  <!-- Preload css -->
+  <style>
+    .pre-load {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #fafaff;
+      z-index: 999999
+    }
+    
+    .load {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
 
-	              	<li class="nav-item">
-	                  	<a class="nav-link" href="voluntario.html">Voluntário</a>
-	              	</li>
-	              	
-	              	<li class="nav-item">
-	                  <a class="nav-link" href="doacao.html">Doações</a>
-	              </li>
-	              
-	              <li class="nav-item">
-	                  <a class="nav-link" href="parceria.html">Seja um Parceiro</a>
-	              </li>
-	            
-	               <li class="nav-item">
-	                  <a class="nav-link" href="contact.html">Sobre Nós</a>
-	              </li>
-	          	</ul>
-	      	</div>
-		  </nav>
-		</header>
+<body>
 
-		<!-- about page breadcrumns -->
-		<section class="inner-banner">
+  <!--Preload div start   -->
+  <div class="pre-load">
+    <div class="load">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //Preload -->
+  <!-- NavBar -->
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#!" class="brand-logo"><img src="assets/favicon-128xxx.png" alt="Jiquitaia Solidária"></a>
+          <a href="#!" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#!">Voluntario</a></li>
+            <li><a href="doacao.html">Doações</a></li>
+            <li><a href="parceria.html">Seja um parceiro</a></li>
+            <li><a href="contato.html">Sobre Nós</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-		</section>
-		<nav aria-label="breadcrumb">
-		    <ol class="breadcrumb breadcrumb-padding">
-		        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-		        <li class="breadcrumb-item active" aria-current="page">Voluntario</li>
-		    </ol>
-		</nav>
-		<!-- //about page breadcrumns -->
+  <!-- SideNav -->
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="assets/images/fundo.jpg" alt="background">
+        </div>
+        <a href="#!"><img class="circle" src="assets/favicon-128xx.png" alt="Jiquitaia Solidária"></a>
+        <a href="#!"><span class="white-text name">Jiquitai Solidária</span></a>
+        <a href="#!"><span class="white-text email">email@algo.com</span>
+        </a>
+      </div>
+    </li>
+    <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+    <li><a class="active" href="#!"><i class="material-icons">accessibility_new</i>Voluntario</a></li>
+    <li><a href="doacao.html"><i class="material-icons">redeem</i>Doações</a></li>
+    <li><a href="parceria.html"><i class="material-icons">supervisor_account</i>Seja um parceiro</a></li>
+    <li><a href="contato.html"><i class="material-icons">info</i>Sobre Nós</a></li>
+  </ul>
 
-		<!-- about page section1-->
-		<section class="w3l-about">
-		    <div class="container">
-		        <div class="row about-content">
-		            <div class="col-lg-6 info mb-lg-0 mb-5 align-center">
-		                <span class="title">Voluntário</span>
-		                <h6>Está afim de colaborar em meio a essa situação? Mas não pode doar dinheiro, comidas ou materiais de limpeza? Então trago uma boa notícia: você pode doar seu tempo, sendo voluntário!</h6>
-		                <p class="mt-md-4 mt-3"> Ah, e você não precisa se preocupar! Quando você se cadastrar para ser voluntário iremos entrar em contato com você para lhe conhecer mais e lhe capacitar para fazer esses serviços da melhor forma possível, reduzindo os riscos de contaminação.
 
-						Depois disso, é só esperar entrarem em contato com você!
 
-						Caso você tenha algum problema e não possa ajudar, ou tenha apresentado algum dos sintomas da doença (febre, tosse, dor na garganta, dificuldade de respirar), nos avise, para que possamos lhe orientar da melhor forma possível, e se necessário lhe realocar para outra área do projeto!
-						</p>
-		                <a href="#author" class="author"><span class="fa fa-user mr-2"></span>Jiquitaia Solidária</a>
-		            </div>
-		            <div class="col-lg-6">
-		                <img src="img/about1.png" class="img-fluid img-shadow" alt="about">
-		            </div>
-		        </div>
-		    </div>
-		</section>
+  <!-- Page 01 -->
+  <section class="w3l-about page01">
+    <div class="container">
+      <div class="row">
 
-		<!-- about page team section -->
-		<section class="w3l-team-main-6">
-		    <!-- /team-grids -->
-		    <div class="team-content">
-		        <div class="container">
-		            <div class="row align-items-center">
-		                <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-		                    <h4 class="section-title">We have an expert team</h4>
-		                    <p class="text-center">Lorem ipsum dolor, sit amet consectet et adipis icing elit. Ab commodi iure
-		                        minus
-		                        laboriosam placeat quia, dolorem animi. Eveniet repudiandae, iure et.</p>
-		                </div>
-		            </div>
-		            <div class="row grid-col-4 text-center mt-5">
-		                <div class="team-colomn col-lg-4 col-md-6 col-sm-6">
-		                    <div class="team-main-6">
-		                        <a href="#team-single.html"><img class="img-fluid" src="img/team1.png" alt=" "></a>
-		                        <h6><a href="#team-single.html" class="title-team-32">Sophia Madison</a></h6>
-		                        <p class="sm-text-32">CEO / Co-Founder</p>
-		                        <div class="social-teams mt-2">
-		                            <a class="facebook" href="#url"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-		                            <a class="twitter" href="#url"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-		                            <a class="insta" href="#url"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-		                        </div>
-		                    </div>
-		                </div>
-		                <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-md-0 mt-5">
-		                    <div class="team-main-6">
-		                        <a href="#team-single.html"><img class="img-fluid" src="img/team2.png" alt=" "></a>
-		                        <h6><a href="#team-single.html" class="title-team-32">Oliver Atticus</a></h6>
-		                        <p class="sm-text-32">Entrepreneur</p>
-		                        <div class="social-teams mt-2">
-		                            <a class="facebook" href="#url"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-		                            <a class="twitter" href="#url"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-		                            <a class="insta" href="#url"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-		                        </div>
-		                    </div>
-		                </div>
-		                <div class="team-colomn col-lg-4 col-md-6 col-sm-6 mt-lg-0 mt-5">
-		                    <div class="team-main-6">
-		                        <a href="#team-single.html"><img class="img-fluid" src="img/team3.png" alt=" "></a>
-		                        <h6><a href="#team-single.html" class="title-team-32">Lucas Jacob</a></h6>
-		                        <p class="sm-text-32">Financial Examiner</p>
+        <div class="col s12">
+          <div class="shape-outside-right">
+            <img src="assets/images/about1.png" class="" alt="about">
+          </div>
+          <h3 class="title">Voluntário</h3>
+          <h6>
+            Está afim de colaborar em meio a essa situação? Mas não pode doar dinheiro, comidas ou materiais de limpeza? Então trago uma boa notícia: você pode doar seu tempo, sendo voluntário!
+          </h6>
+          <p>
+            Ah, e você não precisa se preocupar! Quando você se cadastrar para ser voluntário iremos entrar em contato com você para lhe conhecer mais e lhe capacitar para fazer esses serviços da melhor forma possível, reduzindo os riscos de contaminação. Ah, e você
+            não precisa se preocupar! Quando você se cadastrar para ser voluntário iremos entrar em contato com você para lhe conhecer mais e lhe capacitar para fazer esses serviços da melhor forma possível, reduzindo os riscos de contaminação. Depois
+            disso, é só esperar entrarem em contato com você! Caso você tenha algum problema e não possa ajudar, ou tenha apresentado algum dos sintomas da doença (febre, tosse, dor na garganta, dificuldade de respirar), nos avise, para que possamos lhe
+            orientar da melhor forma possível, e se necessário lhe realocar para outra área do projeto!
+          </p>
+        </div>
 
-		                        <div class="social-teams mt-2">
-		                            <a class="facebook" href="#url"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-		                            <a class="twitter" href="#url"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-		                            <a class="insta" href="#url"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		    <!-- /team-grids -->
-		</section>
-<!-- //about page team section -->
+      </div>
+    </div>
+  </section>
+  <!-- //home page about -->
 
-		<!-- about page form section -->
-		<section class="forms-29">
-		    <div class="container">
-		        <div class="row align-items-center">
-		            <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-		                <h4 class="section-title">Seja Voluntário</h4>
-		                <p class="text-center">Cadastre-se e depois é só aguarda que a equipe do Jiquitaia Solidária entrará em contato!</p>
-		            </div>
-		        </div>
-		        <div class="form-main-cont-29 mt-5">
-		            <div class="content-29-form d-grid">
-		                <form action="#" method="post">
-		                    <div class="forms-29-form">
-		                        <div class="form-group">
-		                            <label class="input__label">Nome</label>
-		                            <div class="input-icon position-relative">
-		                                <span class="fa fa-user-o"></span>
-		                                <input type="text" name="name" class="input__style" placeholder="Nome" required>
-		                            </div>
-		                        </div>
-		                        <div class="form-group">
-		                            <label class="input__label">Email</label>
-		                            <div class="input-icon position-relative">
-		                                <span class="fa fa-envelope-open-o"></span>
-		                                <input type="email" name="email" class="input__style" placeholder="Email" required>
-		                            </div>
-		                        </div>
+  <!-- about page team section -->
+  <section class="w3l-team-main-6">
+    <!-- /team-grids -->
+    <div class="team-content">
+      <div class="container">
+        <div class="row center">
+          <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+            <h4 class="section-title">Junte-se a nossa equipe</h4>
+            <p class="text-center">Lorem ipsum dolor, sit amet consectet et adipis icing elit. Ab commodi iure minus laboriosam placeat quia, dolorem animi. Eveniet repudiandae, iure et.</p>
+          </div>
+        </div>
+        <div class="row center">
+          <div class="team-colomn col l4 m6 s6">
+            <div class="team-main-6">
+              <div class="imgTeam">
+                <div class="borderF"></div>
+                <a href="#!"><img class="img-fluid" src="assets/images/team1.png" alt=" "></a>
+              </div>
+              <h6><a href="#!" class="title-team-32">Sophia Madison</a></h6>
+              <p class="sm-text-32">CEO / Co-Founder</p>
+              <div class="social-teams mt-2">
+                <a class="facebook" href="#!"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                <a class="twitter" href="#!"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                <a class="insta" href="#!"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-colomn col l4 m6 s6">
+            <div class="team-main-6">
+              <div class="imgTeam">
+                <div class="borderF"></div>
+                <a href="#!"><img class="img-fluid" src="assets/images/team2.png" alt=" "></a>
+              </div>
+              <h6><a href="#!" class="title-team-32">Oliver Atticus</a></h6>
+              <p class="sm-text-32">Entrepreneur</p>
+              <div class="social-teams mt-2">
+                <a class="facebook" href="#!"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                <a class="twitter" href="#!"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                <a class="insta" href="#!"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="team-colomn col l4 m6 s6">
+            <div class="team-main-6">
+              <div class="imgTeam">
+                <div class="borderF"></div>
+                <a href="#!"><img class="img-fluid" src="assets/images/team3.png" alt=" "></a>
+              </div>
+              <h6><a href="#!" class="title-team-32">Lucas Jacob</a></h6>
+              <p class="sm-text-32">Financial Examiner</p>
 
-		                         <div class="form-group">
-		                            <label class="input__label">Telefone</label>
-		                            <div class="input-icon position-relative">
-		                                <span class="fa fa-phone"></span>
-		                                <input type="email" name="email" class="input__style" placeholder="Telefone" required>
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <button type="submit" class="btn btn-primary btn-style mt-2">Enviar</button>
-		                </form>
-		            </div>
-		        </div>
-		    </div>
-		    </div>
-		</section>
-<!-- about page form section -->
-<!-- site footer -->
-		<!-- site footer -->
-		<footer id="site-footer">
-		  
-		  <div class="bottom-footer">
-		    <div class="container">
-		      <div class="row">
-		        <div class="col-lg-8 text-lg-left text-center mb-lg-0 mb-3">
-		          <p class="copyright">© 2020 Jiquitaia Solidária
-		            </p>
-		        </div>
-		        <div class="col-lg-4 align-center text-lg-right text-center">
-		          <a href="https://www.facebook.com/jiquitaiasolidaria/" class="social-item"><span class="fa fa-facebook-f"></span></a>
-		          <a href="https://instagram.com/jiquitaiasolidaria?igshid=8kgvazw6ai08" class="social-item"><span class="fa fa-instagram"></span></a>
-		        </div>
-		      </div>
-		    </div>
-		  </div>
-		</footer>
-		<!-- //site footer -->
+              <div class="social-teams mt-2">
+                <a class="facebook" href="#!"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                <a class="twitter" href="#!"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                <a class="insta" href="#!"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /team-grids -->
+  </section>
+  <!-- //about page team section -->
 
-		<!-- move top -->
-		<button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
-		  <span class="fa fa-angle-up"></span>
-		</button>
 
-		<script>
-		  // When the user scrolls down 20px from the top of the document, show the button
-		  window.onscroll = function () {
-		    scrollFunction()
-		  };
-		  function scrollFunction() {
-		    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		      document.getElementById("movetop").style.display = "block";
-		    } else {
-		      document.getElementById("movetop").style.display = "none";
-		    }
-		  }
-		  // When the user clicks on the button, scroll to the top of the document
-		  function topFunction() {
-		    document.body.scrollTop = 0;
-		    document.documentElement.scrollTop = 0;
-		  }
-		</script>
-		<!-- //move top -->
 
-		<!-- javascript -->
-		<script src="js/jquery-3.3.1.min.js"></script>
 
-		<!-- libhtbox -->
-		<script src="js/lightbox-plus-jquery.min.js"></script>
+  <section class="contact-form">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 m12 s12 center">
+          <h4 class="section-title">Seja Voluntario</h4>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col l6 m6  s12">
+                <input id="nome" type="text" class="validate">
+                <label for="nome">Nome</label>
+              </div>
+              <div class="input-field col l6 m6 s12">
+                <input id="dtNasc" type="text" class="validate datepicker">
+                <label for="dtNasc">Data de nascimento</label>
+              </div>
 
-		<!-- particles -->
-		<script src='js/particles.min.js'></script>
-		<script src="js/script.js"></script>
-		<!-- //particles -->
+              <div class="input-field col l6 m6  s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col l6 m6 s12">
+                <input id="assunto" type="tel" class="validate telefone">
+                <label for="assunto">Telefone</label>
+              </div>
+            </div>
 
-		<!-- owl carousel -->
-		<script src="js/owl.carousel.js"></script>
-		<script>
-		  $(document).ready(function () {
-		    var owl = $('.owl-carousel');
-		    owl.owlCarousel({
-		      margin: 10,
-		      nav: true,
-		      loop: false,
-		      responsive: {
-		        0: {
-		          items: 1
-		        },
-		        767: {
-		          items: 2
-		        },
-		        1000: {
-		          items: 3
-		        }
-		      }
-		    })
-		  })
-		</script>
+            <div class="col l12 m12 s12 input-field center">
+              <a href="#!" class="clickSend anmsend waves-effect waves-light btn"> Enviar </a>
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="container">
+        <h4>Exemplo de Politica para <a href='#!'>Jiquitaia Solidária</a></h4>
+        <p>Exemplo de paragarafos</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae cumque aut officiis, veritatis sint exercitationem sequi voluptas illo ipsum repudiandae. Sit corrupti, molestias fugit adipisci corporis numquam illo inventore.</p>
+        <h5 class="title-topico">Exemplo de Tópico</h5>
+        </br>
+        <p>Cordialmente JiquitaiaTeam.</p>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Negar</a>
+          <a href="#!" class="modal-close font-light-btn waves-effect btn-color-05 btn">Aceitar</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-		<!-- disable body scroll which navbar is in active -->
-		<script>
-		  $(function () {
-		    $('.navbar-toggler').click(function () {
-		      $('body').toggleClass('noscroll');
-		    })
-		  });
-		</script>
-		
-		<script src="js/bootstrap.min.js"></script>
-	</body>
+  <div id="modal2" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="container">
+        <h4>Direitos Autorais </h4>
+        <p>Exemplo de paragarafos</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae cumque aut officiis, veritatis sint exercitationem sequi voluptas illo ipsum repudiandae. Sit corrupti, molestias fugit adipisci corporis numquam illo inventore.</p>
+
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Negar</a>
+          <a href="#!" class="modal-close font-light-btn waves-effect btn-color-05 btn">Aceitar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- move top -->
+  <div id="btnTop" class=" bx-arrw ">
+    <a class="btn-Top z-depth-3"><i class="material-icons ">arrow_upward</i><i class="material-icons ">arrow_upward</i></a>
+  </div>
+  <!-- site footer -->
+
+  <footer class="page-footer ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col l3 m6 s12 ">
+          <ul class="collection ">
+            <li class="collection-header ">
+              <h5>Páginas</h5>
+            </li>
+            <li class="collection-item "><a href="index.html "><i class="material-icons ">chevron_right</i>Home</a></li>
+            <li class="collection-item "><a href="voluntario.html "><i class="material-icons ">chevron_right</i>Voluntario</a></li>
+            <li class="collection-item "><a href="doacao.html "><i class="material-icons ">chevron_right</i>Doações</a></li>
+            <li class="collection-item "><a href="parceria.html "><i class="material-icons ">chevron_right</i>Seja um parceiro</a></li>
+            <li class="collection-item "><a href="contato.html "><i class="material-icons ">chevron_right</i>Sobre Nós</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m6 s12 ">
+          <ul class="collection ">
+            <li class="collection-header ">
+              <h5>Informações</h5>
+            </li>
+            <li class="collection-item ">
+              <a class="modal-trigger" data-target="modal1"> <i class="material-icons ">chevron_right</i> Política de Privacidade</a>
+            </li>
+            <li class="collection-item ">
+              <a class="modal-trigger" data-target="modal2"> <i class="material-icons ">chevron_right</i> Termos de Serviço</a>
+            </li>
+            <li class="collection-item ">
+              <a href="#!"> <i class="material-icons ">chevron_right</i> Sitemap</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l3 m6 s12 ">
+          <ul class="collection ">
+            <li class="collection-header ">
+              <h5>Nossas redes</h5>
+            </li>
+            <li class="collection-item "><a href="https://www.facebook.com/jiquitaiaSolidária/ "><i class="fa fa-facebook-square "></i> Facebook</a></li>
+            <li class="collection-item "><a href="https://instagram.com/jiquitaiaSolidária?igshid=8kgvazw6ai08 "><i class="fa fa-instagram "></i> Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col l3 m12 s12 center ">
+          <a href="# "><img class="lg-ftr " src="assets/favicon-128xxx.png " alt="Biologia Digital "></a>
+          <h5>Jiquitaia Solidária</h5>
+          <p class="p-slgn ">Texto breve que enfatixe o projeto ou algo do tipo, no maximo 3 linhas</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright ">
+      <div class="container ">
+        <div class="row ">
+          <div class="col l6 m6 s12 center "> &copy; 2020 Jiquitaia Solidária.</div>
+          <div class="col l6 m6 s12 center ">Produzido por <a href="#! ">JiquitaiTeam</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- //site footer -->
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+  <!-- Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+  <!-- Mask -->
+  <script src="js/jquery.mask.js "></script>
+  <!-- Custom -->
+  <script>
+    // Preload jquery start
+    $(document).ready(function() {
+      $('.pre-load').hide();
+    });    //SideNav
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+    });
+    //modal
+    $(document).ready(function() {
+      $('.modal').modal();
+    });
+    //navbar
+    $(function() {
+      $('.navbar-toggler').click(function() {
+        $('body').toggleClass('noscroll');
+      })
+    });
+    //datepikers
+    $(document).ready(function() {
+      $('.datepicker').datepicker();
+    });
+
+    M.textareaAutoResize($('#textarea1'));
+
+
+    $(window).scroll(() => {
+      let scrollLocale = $("html, body").scrollTop();
+      let alturaH = $(".page01").height() / 2;
+      if (scrollLocale > alturaH) {
+        $("#btnTop").show();
+      } else {
+        $("#btnTop").hide();
+      }
+    });
+
+    $('.btn-Down').click(function() {
+      $("html, body ").animate({
+        scrollTop: $(window).height()
+      }, 400);
+      return false;
+    });
+
+    $('.btn-Top').click(function() {
+      $("html, body ").animate({
+        scrollTop: 0
+      }, 400);
+      return false;
+    });
+
+    var spinner = "<span class='spinner'></span>";
+    $('.clickSend').click(function() {
+      var emailSend = $("#emailC").val();
+      $(".anmsend").toggleClass('loading').html(spinner);
+      setTimeout(() => {
+        $("#emailC").trigger("reset");
+        $(".anmsend").toggleClass('loading');
+        $(".anmsend").toggleClass('btnW100 resetBtn ').html("Email enviado com sucesso(ou outro text)");
+      }, 1500);
+      /* 
+      if (emailSend != null && emailSend != "") { $(".anmsend").toggleClass('
+               loading ').html(spinner); setTimeout(() => { $("#emailC").trigger("reset"); $(".anmsend").toggleClass('
+               loading ');
+               $(".anmsend").toggleClass('btnW100 resetBtn').html("Email enviado com sucesso(ou outro text)");
+             }, 1500);
+           var dadosFeed = {
+             emailS: emailSend
+           }
+           $.post('salvar-email.php', dadosFeed, (resultado) => {
+             let resposta = resultado + "";
+             if (resultado ==
+               "O Email está em uso, tente outro") {
+               $(".anmsend").toggleClass('loading btnW100').html(resposta);
+               $("#emailC").trigger("reset");
+             } else {
+               $("#emailC").trigger("reset");
+               $(".anmsend").toggleClass('loading');
+               $(".anmsend").toggleClass('btnW100 resetBtn').html(resposta);
+             }
+           });
+         } 
+         */
+    });
+
+    var largImgT = $(".imgTeam").width();
+    $(".borderF").css({
+      "height": largImgT + "px",
+      "width": largImgT + "px"
+    });
+    $('.telefone').mask('(00) 0 0000-0000');
+  </script>
+  <!-- //move top -->
+
+</body>
+
 </html>
