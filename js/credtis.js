@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  const name = document.getElementById('name');
+  const name = document.getElementById('nameCartão');
   const cardnumber = document.getElementById('cardnumber');
   const expirationdate = document.getElementById('expirationdate');
   const securitycode = document.getElementById('securitycode');

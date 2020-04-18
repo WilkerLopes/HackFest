@@ -15,8 +15,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/owl.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/6035/grid.css" rel="stylesheet">
+  <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/6035/icomoon-scrtpxls.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/dash.css">
   <link rel="stylesheet" type="text/css" href="css/bundler.css">
+  <link rel="stylesheet" type="text/css" href="css/animationS.css">
   <!-- Preload css -->
   <style>
     .pre-load {
@@ -42,7 +46,24 @@
 
   <!--Preload div start   -->
   <div class="pre-load">
-    <div class="load">
+    <div id="loadFundo" class="load">
+      <div class="erroLogin">
+        <div class="container">
+          <div class="row">
+            <div class="modalbox error col-sm-8 col-md-6 col-lg-5 center animate" style="display: block;">
+              <div class="icon">
+                <span class="glyphicon glyphicon-thumbs-down material-icons">close</span>
+              </div>
+              <!--/.icon-->
+              <h1>Que pena</h1>
+              <p>Tentamos fazer seu login, mas verificamos q vocçe nao possui cadastro conoso,cadastre-se no página de doação. Caso tenha, entre em contato.</p>
+              <a href="doacao.html" class="redo btn">Cadastrar-se</a>
+            </div>
+            <!--/.success-->
+          </div>
+        </div>
+      </div>
+
       <div class="preloader-wrapper big active">
         <div class="spinner-layer spinner-blue-only">
           <div class="circle-clipper left">
@@ -59,6 +80,9 @@
     </div>
   </div>
   <!-- //Preload -->
+
+
+
   <!-- NavBar -->
   <div class="navbar-fixed">
     <nav class="nav-wrapper">
@@ -87,7 +111,7 @@
         </div>
         <a href="#!"><img class="circle" src="assets/favicon-128xx.png" alt="Jiquitaia Solidária"></a>
         <a href="#!"><span class="white-text name">Jiquitai Solidária</span></a>
-        <a href="#!"><span class="white-text email">email@algo.com</span>
+        <a href="#!"><span class="white-text email">jiquitariasolidaria@gmail.com</span>
         </a>
       </div>
     </li>
@@ -103,132 +127,98 @@
   <!-- Page 01 -->
   <section class="w3l-about page01">
     <div class="container">
-      <div class="row">
-
-        <div class="col s12">
-          <div class="shape-outside-right">
-            <img src="assets/images/about1.png" class="" alt="about">
+      <div class="grid_4">
+        <section class="box widget locations">
+          <div class="avatar">
+            <img src="assets/images/pf1.jpg" />
           </div>
-          <h3 class="title">Voluntário</h3>
-          <h6>
-            Está afim de colaborar em meio a essa situação? Mas não pode doar dinheiro, comidas ou materiais de limpeza? Então trago uma boa notícia: você pode doar seu tempo, sendo voluntário!
-          </h6>
-          <p>
-            Ah, e você não precisa se preocupar! Quando você se cadastrar para ser voluntário iremos entrar em contato com você para lhe conhecer mais e lhe capacitar para fazer esses serviços da melhor forma possível, reduzindo os riscos de contaminação. Ah, e você
-            não precisa se preocupar! Quando você se cadastrar para ser voluntário iremos entrar em contato com você para lhe conhecer mais e lhe capacitar para fazer esses serviços da melhor forma possível, reduzindo os riscos de contaminação. Depois
-            disso, é só esperar entrarem em contato com você! Caso você tenha algum problema e não possa ajudar, ou tenha apresentado algum dos sintomas da doença (febre, tosse, dor na garganta, dificuldade de respirar), nos avise, para que possamos lhe
-            orientar da melhor forma possível, e se necessário lhe realocar para outra área do projeto!
-          </p>
+          <div class="details">
+            <h2 id="nameU">NOME DA PESSOA</h2>
+            <p id="emailU">EMAIL DA PESSOAS</p>
+            <a href="doacao.html" class="btn btn-primary btn-block btn-large">Fazer doação</a>
+          </div>
+        </section>
+        <section class="box widget calendar">
+          <header class="header">
+            <h2>Sábado</h2>
+            <p><span class="icon-arrow-left"></span>Abril<span class="icon-arrow-right"></span></p>
+          </header>
+          <article class="days">
+            <ul>
+              <li class="previous">30</li>
+              <li class="previous">31</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li class="tomorow">18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li class="next">1</li>
+              <li class="next">2</li>
+              <li class="next">3</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+      <div class="grid_8">
+        <div class="inner_container">
+          <div class="col_1of3">
+            <section class="box widget weather">
+              <header class="header">
+                <div id="valueDonate" class="temp"><span class=" material-icons">attach_money</span>250</div>
+                <span class="icon-partlycloudy"></span>
+              </header>
+              <article>
+                <h2>Hoje</h2>
+              </article>
+            </section>
+          </div>
+          <div class="col_2of3">
+            <article class="box post">
+              <div class="image">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/6035/scrtpxls_post.png" />
+              </div>
+              <div class="details">
+                <h2>Ufam</h2>
+                <p>Esse foi o seu ultimo local de doação</p>
+              </div>
+            </article>
+          </div>
         </div>
-
       </div>
     </div>
   </section>
   <!-- //home page about -->
 
-  <!-- about page team section -->
-  <section class="w3l-team-main-6">
-    <!-- /team-grids -->
-    <div class="team-content">
-      <div class="container">
-        <div class="row center">
-          <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-            <h4 class="section-title">Junte-se a nossa equipe</h4>
-            <p class="text-center">Lorem ipsum dolor, sit amet consectet et adipis icing elit. Ab commodi iure minus laboriosam placeat quia, dolorem animi. Eveniet repudiandae, iure et.</p>
-          </div>
-        </div>
-        <div class="row center">
-          <div class="team-colomn col l4 m6 s6">
-            <div class="team-main-6">
-              <div class="imgTeam">
-                <div class="borderF"></div>
-                <a href="#!"><img class="img-fluid" src="assets/images/team1.png" alt=" "></a>
-              </div>
-              <h6><a href="#!" class="title-team-32">Sophia Madison</a></h6>
-              <p class="sm-text-32">CEO / Co-Founder</p>
-              <div class="social-teams mt-2">
-                <a class="facebook" href="#!"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                <a class="twitter" href="#!"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                <a class="insta" href="#!"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-colomn col l4 m6 s6">
-            <div class="team-main-6">
-              <div class="imgTeam">
-                <div class="borderF"></div>
-                <a href="#!"><img class="img-fluid" src="assets/images/team2.png" alt=" "></a>
-              </div>
-              <h6><a href="#!" class="title-team-32">Oliver Atticus</a></h6>
-              <p class="sm-text-32">Entrepreneur</p>
-              <div class="social-teams mt-2">
-                <a class="facebook" href="#!"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                <a class="twitter" href="#!"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                <a class="insta" href="#!"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-colomn col l4 m6 s6">
-            <div class="team-main-6">
-              <div class="imgTeam">
-                <div class="borderF"></div>
-                <a href="#!"><img class="img-fluid" src="assets/images/team3.png" alt=" "></a>
-              </div>
-              <h6><a href="#!" class="title-team-32">Lucas Jacob</a></h6>
-              <p class="sm-text-32">Financial Examiner</p>
-
-              <div class="social-teams mt-2">
-                <a class="facebook" href="#!"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                <a class="twitter" href="#!"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                <a class="insta" href="#!"><span class="fa fa-instagram" aria-hidden="true"></span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /team-grids -->
-  </section>
-  <!-- //about page team section -->
 
 
 
 
-  <section class="contact-form">
-    <div class="container">
-      <div class="row">
-        <div class="col l12 m12 s12 center">
-          <h4 class="section-title">Seja Voluntario</h4>
-        </div>
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col l6 m6  s12">
-                <input id="nome" type="text" class="validate">
-                <label for="nome">Nome</label>
-              </div>
-              <div class="input-field col l6 m6 s12">
-                <input id="dtNasc" type="text" class="validate datepicker">
-                <label for="dtNasc">Data de nascimento</label>
-              </div>
 
-              <div class="input-field col l6 m6  s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
-              <div class="input-field col l6 m6 s12">
-                <input id="assunto" type="tel" class="validate telefone">
-                <label for="assunto">Telefone</label>
-              </div>
-            </div>
-
-            <div class="col l12 m12 s12 input-field center">
-              <a href="#!" class="clickSend anmsend waves-effect waves-light btn"> Enviar </a>
-            </div>
-          </form>
-        </div>
-      </div>
-  </section>
   <!-- Modal Structure -->
   <div id="modal1" class="modal bottom-sheet">
     <div class="modal-content">
@@ -335,8 +325,22 @@
   <script>
     // Preload jquery start
     $(document).ready(function() {
-      $('.pre-load').hide();
-    });    //SideNav
+      var nameU = localStorage.getItem("nome");
+      var idadeU = localStorage.getItem("idade");
+      var emailU = localStorage.getItem("email");
+      var danate = localStorage.getItem("donate");
+      if (name != null && name != "" && idade != null && idade != "" && email != null && email != "") {
+        $("#nameU").text(nameU);
+        $("#nameU").text(idadeU);
+        $("#emailU").text(emailU);
+        $("#valueDonate").append(donate);
+        $('.pre-load').hide();
+      } else {
+        $(".preloader-wrapper").hide();
+      }
+
+    });
+    //SideNav
     $(document).ready(function() {
       $('.sidenav').sidenav();
     });
@@ -350,12 +354,6 @@
         $('body').toggleClass('noscroll');
       })
     });
-    //datepikers
-    $(document).ready(function() {
-      $('.datepicker').datepicker();
-    });
-
-    M.textareaAutoResize($('#textarea1'));
 
 
     $(window).scroll(() => {
@@ -381,47 +379,6 @@
       }, 400);
       return false;
     });
-
-    var spinner = "<span class='spinner'></span>";
-    $('.clickSend').click(function() {
-      var emailSend = $("#emailC").val();
-      $(".anmsend").toggleClass('loading').html(spinner);
-      setTimeout(() => {
-        $("#emailC").trigger("reset");
-        $(".anmsend").toggleClass('loading');
-        $(".anmsend").toggleClass('btnW100 resetBtn ').html("Email enviado com sucesso(ou outro text)");
-      }, 1500);
-      /* 
-      if (emailSend != null && emailSend != "") { $(".anmsend").toggleClass('
-               loading ').html(spinner); setTimeout(() => { $("#emailC").trigger("reset"); $(".anmsend").toggleClass('
-               loading ');
-               $(".anmsend").toggleClass('btnW100 resetBtn').html("Email enviado com sucesso(ou outro text)");
-             }, 1500);
-           var dadosFeed = {
-             emailS: emailSend
-           }
-           $.post('salvar-email.php', dadosFeed, (resultado) => {
-             let resposta = resultado + "";
-             if (resultado ==
-               "O Email está em uso, tente outro") {
-               $(".anmsend").toggleClass('loading btnW100').html(resposta);
-               $("#emailC").trigger("reset");
-             } else {
-               $("#emailC").trigger("reset");
-               $(".anmsend").toggleClass('loading');
-               $(".anmsend").toggleClass('btnW100 resetBtn').html(resposta);
-             }
-           });
-         } 
-         */
-    });
-
-    var largImgT = $(".imgTeam").width();
-    $(".borderF").css({
-      "height": largImgT + "px",
-      "width": largImgT + "px"
-    });
-    $('.telefone').mask('(00) 0 0000-0000');
   </script>
   <!-- //move top -->
 

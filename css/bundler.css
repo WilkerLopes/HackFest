@@ -1,7 +1,7 @@
             /*      
 
      ██╗██╗ ██████╗ ██╗   ██╗██╗████████╗ █████╗ ██╗ █████╗    TM
-     ██║██║██╔═══██╗██║   ██║██║╚══██╔══╝██╔══██╗██║██╔══██╗    
+     ██║██║██╔═══██╗██║   ██║██║╚══██╔══╝██╔══██╗██║██╔══██╗   	
      ██║██║██║   ██║██║   ██║██║   ██║   ███████║██║███████║   
 ██   ██║██║██║▄▄ ██║██║   ██║██║   ██║   ██╔══██║██║██╔══██║   
 ╚█████╔╝██║╚██████╔╝╚██████╔╝██║   ██║   ██║  ██║██║██║  ██║   
@@ -191,6 +191,7 @@ Variáveis
             nav {
               background-color: var(--color-06);
               height: 64px;
+              z-index: 9999999;
             }
             
             nav ul li a,
@@ -495,9 +496,16 @@ Variáveis
               padding-left: 5px;
             }
             
-            .owl-carousel .owl-item .custo-img-res img {
+            .owl-carousel .owl-item .custo-img-res {
               width: 80px;
+              height: 80px;
+              border-radius: 40px;
               margin: auto;
+              overflow: hidden;
+            }
+            
+            .owl-carousel .owl-item .custo-img-res img {
+              width: 100%;
             }
             
             .customers_grid {
@@ -1283,4 +1291,27 @@ barra de pesquisa
             .faq-q:last-child {
               border-bottom-right-radius: 0;
               border-bottom-left-radius: 0;
+            }
+            /* forme de donate */
+            
+            #formulario21,
+            #formulario22,
+            #formulario31,
+            #formulario32,
+            #formulario33,
+            #formulario34,
+            #formulario4,
+            #printMaps1,
+            #printMaps2,
+            #printMaps3,
+            #printMaps4,
+            #modoOnline {
+              display: none;
+            }
+            
+            .formDonate {
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
             }
